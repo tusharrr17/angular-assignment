@@ -1,1 +1,43 @@
-<p>filter works!</p>
+<div class="container">
+    <div class="div1">
+        <div class="custom-dropdown">
+            <select>
+                <option value="option1">ANNEXXUS 61D</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="div2">
+        <p>Measures</p>
+    </div>
+    <div class="div3">
+        <div class="measures-options">
+            <div *ngFor="let measure of measures">
+                <input type="checkbox" [id]="measure.id" [name]="measure.name" [value]="measure.name">
+                <label [for]="measure.id"> {{ measure.name }}</label><br><br>
+            </div>
+        </div>
+        <p>Attributes</p>
+    </div>
+    <div class="div4">
+        <div class="attributes-options">
+            <div *ngFor="let attribute of attributes">
+                <input type="checkbox" [id]="attribute.id" [name]="attribute.name" [value]="attribute.name">
+                <label [for]="attribute.id"> {{ attribute.name }}</label><br><br>
+            </div>
+        </div>
+    </div>
+    <div class="div5">
+        <button onclick="alert('Report Closed')">
+            <img src="./assets/cross.png" alt="cross" width="50px" height="50px">
+        </button>
+        <button onclick="alert('Report is running.')" class="report-button">
+            <div class="overlay-container">
+                <img src="./assets/run-report.png" alt="run report" width="150px" height="50px">
+                <p class="overlay-text">Run Report</p>
+            </div>
+        </button>
+    </div>
+</div>

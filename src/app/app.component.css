@@ -1,7 +1,6 @@
 .container1 {
     display: flex;
-    height: 100vh;
-    /* Full height */
+    height: 100%;
 }
 
 .sidebar {
@@ -11,18 +10,17 @@
 
 .container2 {
     flex: 1;
-    /* Take remaining space */
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 }
 
-.main-header {
-    margin-bottom: 20px;
-}
-
 .header {
     font-family: 'Gilroy-Bold', sans-serif;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 40px;
 }
 
 .main-content {
@@ -34,14 +32,12 @@
 .container3 {
     display: flex;
     flex: 1;
-    justify-content: space-between;
 }
 
-.col1,
+
 .col2,
 .col3,
 .col4 {
-    padding: 20px;
     box-sizing: border-box;
     background-color: #ffffff;
     border: 1px solid #EAECF0;
