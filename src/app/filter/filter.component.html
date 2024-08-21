@@ -10,20 +10,27 @@
         </div>
     </div>
     <div class="div2">
-        <p>Measures</p>
+        <div class="measures-text">
+            <img src="./assets/down-arrow.png" width="20px" height="20px">
+            <p>Measures</p>
+        </div>
     </div>
     <div class="div3">
         <div class="measures-options">
-            <div *ngFor="let measure of measures">
+            <div class="options" *ngFor="let measure of measures">
                 <input type="checkbox" [id]="measure.id" [name]="measure.name" [value]="measure.name">
                 <label [for]="measure.id"> {{ measure.name }}</label><br><br>
             </div>
+            <div class="attributes-text">
+                <img src="./assets/down-arrow.png" width="20px" height="20px">
+                <p>Attributes</p>
+            </div>
         </div>
-        <p>Attributes</p>
+        
     </div>
     <div class="div4">
         <div class="attributes-options">
-            <div *ngFor="let attribute of attributes">
+            <div class="options" *ngFor="let attribute of attributes">
                 <input type="checkbox" [id]="attribute.id" [name]="attribute.name" [value]="attribute.name">
                 <label [for]="attribute.id"> {{ attribute.name }}</label><br><br>
             </div>
@@ -31,7 +38,7 @@
     </div>
     <div class="div5">
         <button onclick="alert('Report Closed')">
-            <img src="./assets/cross.png" alt="cross" width="50px" height="50px">
+            <img src="./assets/cross.png" class="responsive-img" width="50px" height="50px">
         </button>
         <button onclick="alert('Report is running.')" class="report-button">
             <div class="overlay-container">
