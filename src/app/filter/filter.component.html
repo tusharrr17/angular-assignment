@@ -7,6 +7,7 @@
                 <option value="option3">Option 3</option>
                 <option value="option4">Option 4</option>
             </select>
+            <img src="./assets/down-arrow.png" class="dropdown-arrow" width="20px" height="20px">
         </div>
     </div>
     <div class="div2">
@@ -21,10 +22,10 @@
                 <input type="checkbox" [id]="measure.id" [name]="measure.name" [value]="measure.name">
                 <label [for]="measure.id"> {{ measure.name }}</label><br><br>
             </div>
-            <div class="attributes-text">
-                <img src="./assets/down-arrow.png" width="20px" height="20px">
-                <p>Attributes</p>
-            </div>
+        </div>
+        <div class="attributes-text">
+            <img src="./assets/down-arrow.png" width="20px" height="20px">
+            <p>Attributes</p>
         </div>
         
     </div>
@@ -38,13 +39,10 @@
     </div>
     <div class="div5">
         <button onclick="alert('Report Closed')">
-            <img src="./assets/cross.png" class="responsive-img" width="50px" height="50px">
+            <img src="./assets/cross.png" class="responsive-img">
         </button>
         <button onclick="alert('Report is running.')" class="report-button">
-            <div class="overlay-container">
-                <img src="./assets/run-report.png" alt="run report" width="150px" height="50px">
-                <p class="overlay-text">Run Report</p>
-            </div>
+            <img src="./assets/run-report.png" alt="run report" >
         </button>
     </div>
 </div>

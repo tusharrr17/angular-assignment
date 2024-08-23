@@ -1,32 +1,35 @@
-<div class="container1">
+<div class="wrapper">
   <div class="sidebar">
     <app-sidebar></app-sidebar>
   </div>
+  <div class="container1">
+    <div class="container2">
+      <div class="main-header">
+        <div class="header">
+          <button>
+            <img src="./assets/left-arrow.png" alt="back" width="30" height="30">
+          </button>
+          <img src="./assets/reports.png" alt="logo" width="35" height="35">
+          <h2>Monthly sales report</h2>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="container3">
+          <div class="col1">
+            <app-filter></app-filter>
+          </div>
+          <div class="col2">
+            <app-chart></app-chart>
+          </div>
+          <div class="col3">
+            <app-settings></app-settings>
+          </div>
+          <div class="col4">
+            <app-file-options></app-file-options>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div class="container2">
-    <div class="main-header">
-      <div class="header">
-        <img src="./assets/left-arrow.png" alt="back" width="35" height="35">
-        <img src="./assets/reports.png" alt="logo" width="40" height="40">
-        <h1>Monthly sales report</h1>
-      </div>
-    </div>
-    <div class="main-content">
-      <div class="container3">
-        <div class="col1">
-          <app-filter></app-filter>
-        </div>
-        <div class="col2">
-          <app-chart></app-chart>
-        </div>
-        <div class="col3">
-          <app-settings></app-settings>
-        </div>
-        <div class="col4">
-          <app-file-options></app-file-options>
-        </div>
-      </div>
-    </div>
   </div>
-  
 </div>

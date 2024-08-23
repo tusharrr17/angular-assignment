@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: "Gilroy-Bold", sans-serif;
+}
+
+.heading {
+    margin-left: 30px;
+}
+
+.chart-container {
+    padding: 50px;
+}

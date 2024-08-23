@@ -1,1 +1,37 @@
-<p>settings works!</p>
+<div class="container">
+    <div class="text">
+        <h4>Settings</h4>
+        <button>
+            <img src="./assets/cross2.png">
+        </button>  
+    </div>
+    <div class="settings">
+        <button (click)="selectTab('chartType')" [class.active]="selectedTab === 'chartType'">
+            <h4>Chart Type</h4>
+        </button>
+        <button (click)="selectTab('chartSettings')" [class.active]="selectedTab === 'chartSettings'">
+            <h4>Chart Settings</h4>
+        </button>
+        <div class="underline"
+            [ngClass]="{'chart-type': selectedTab === 'chartType', 'chart-settings': selectedTab === 'chartSettings'}">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="charttypes" *ngIf="selectedTab === 'chartType'">
+            <button (click)="selectChartOption(1)" [class.selected]="selectedChartOption === 1">
+                <img src="./assets/chartoptions1.png">
+            </button>
+            <button (click)="selectChartOption(2)" [class.selected]="selectedChartOption === 2">
+                <img src="./assets/chartoptions2.png">
+            </button>
+            <button (click)="selectChartOption(3)" [class.selected]="selectedChartOption === 3">
+                <img src="./assets/chartoptions3.png">
+            </button>
+        </div>
+        <div class="chartsettings" *ngIf="selectedTab === 'chartSettings'">
+            <p>Here you can configure the settings for the chart.</p>
+        </div>
+    </div>
+    
+</div>
