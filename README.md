@@ -1,4 +1,4 @@
-# Intern + Angular
+# Angular Assignment
 
 This is an assignment/project to demonstrate the knowledge of Angular 18. 
 
