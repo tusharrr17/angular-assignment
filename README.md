@@ -49,7 +49,7 @@ The Chart component visualizes data in different formats like column, donut, and
 ### settings
 The settings component lets user choose between diffferent chart types and also set the chart settings.
 
-### fileoptions
+### file-options
 The File Options component provides actions related to file management, including uploading, downloading, saving and organizing files within the application.
 
 
